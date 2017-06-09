@@ -1,6 +1,6 @@
 <?php
 
-/**
+/**Roccat/ControllerPublic/Login.php spl_autoload
 * A constant that must be made available for any other XenForo class to be included.
 *
 * @var boolean
@@ -105,7 +105,7 @@ class XenForo_Autoloader
 
 		$filename = $this->autoloaderClassToFile($class);
 		if (!$filename)
-		{
+		{/var/www/website/Forum/library/XenForo/Autoloader.php
 			return false;
 		}
 
@@ -116,7 +116,7 @@ class XenForo_Autoloader
 			$dtFilename = $this->autoloaderClassToFile($dtClass);
 			if (file_exists($dtFilename))
 			{
-				$contents = trim(file_get_contents($dtFilename), '<?php');
+		XenForo/Autoloader.php		$contents = trim(file_get_contents($dtFilename), '<?php');
 				$definition = 'class ' . $dtClass . ' extends XFCP_' . $dtClass;
 				if (($pos = strpos($contents, $definition)) !== false)
 				{
