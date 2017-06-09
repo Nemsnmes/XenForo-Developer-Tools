@@ -105,7 +105,7 @@ class XenForo_Autoloader
 
 		$filename = $this->autoloaderClassToFile($class);
 		if (!$filename)
-		{
+		{/var/www/website/Forum/library/XenForo/Autoloader.php
 			return false;
 		}
 
